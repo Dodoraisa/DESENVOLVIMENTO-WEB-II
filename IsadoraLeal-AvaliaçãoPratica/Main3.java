@@ -3,7 +3,6 @@ public class Main3 {
 
         String frase = "Olá mundo!";
 
-        // Remover o ponto de exclamação temporariamente
         String fraseSemExclamacao = frase.substring(0, frase.length() - 1);
 
         String[] palavras = fraseSemExclamacao.split(" ");
@@ -17,11 +16,9 @@ public class Main3 {
             }
         }
 
-        // Ajustar primeira letra para minúscula se necessário
         String resultado = invertida.toString();
         resultado = resultado.substring(0,1).toUpperCase() + resultado.substring(1).toLowerCase();
 
-        // Adicionar exclamação novamente
         resultado += "!";
 
         System.out.println(resultado);
